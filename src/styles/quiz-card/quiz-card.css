@@ -6,13 +6,13 @@
   box-shadow: 1px 1px 7px #ddd;
   text-align: center;
   font-weight: 300;
-  postition: relative;
+  position: relative;
 }
 
 .quiz-card__icon {
   width: 48px;
   position: absolute;
-  top: 7px;
+  top: -10px;
   right: 40px;
 }
 

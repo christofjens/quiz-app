@@ -1,0 +1,66 @@
+.quiz-card {
+  padding: 0;
+  margin: 0;
+  border: 1px #ddd none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 7px #ddd;
+  text-align: center;
+  font-weight: 300;
+  postition: relative;
+}
+
+.quiz-card__icon {
+  width: 48px;
+  position: absolute;
+  top: 7px;
+  right: 40px;
+}
+
+.quiz-card__headline {
+  padding: 20px 20px 10px 20px;
+  text-align: left;
+  color: var(--color-primary);
+  font-weight: 400;
+}
+
+.quiz-card__text {
+  text-align: left;
+  padding: 0 20px 20px 20px;
+  margin: 0;
+}
+
+.quiz-card__text--answer {
+  text-align: left;
+  padding: 0 20px 20px 20px;
+  margin: 20px 20px;
+  display: none;
+}
+
+.quiz-card__button {
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  padding: 20px;
+  border: 1px none #ddd;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 300;
+}
+
+.quiz-card__tag-cloud {
+  list-style: none;
+  display: flex;
+  flex-flow: wrap;
+  padding: 0 20px 20px 20px;
+}
+
+.quiz-card__tag-cloud--item {
+  display: inline-block;
+  background: #ddd;
+  border-radius: 5px;
+  color: #333;
+  margin: 4px;
+  padding: 7px 10px 5px 10px;
+  font-weight: 300;
+  width: max-content;
+}

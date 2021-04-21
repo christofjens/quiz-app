@@ -1,19 +1,27 @@
 .quiz-card {
   padding: 0;
   margin: 0;
-  border: 1px #ddd none;
-  border-radius: 10px;
+  border: 0.5px #ddd solid;
+  border-radius: 30px;
   box-shadow: 1px 1px 7px #ddd;
   text-align: center;
   font-weight: 300;
   position: relative;
 }
 
-.quiz-card__icon {
-  width: 48px;
+.quiz-card__bookmark {
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: -10px;
-  right: 40px;
+  top: -3px;
+  right: 50px;
+  border: 20px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+.quiz-card__bookmark--active {
+  border: 20px solid hotpink;
+  border-bottom-color: transparent;
 }
 
 .quiz-card__headline {
@@ -31,19 +39,18 @@
 
 .quiz-card__text--answer {
   text-align: left;
-  padding: 0 20px 20px 20px;
-  margin: 20px 20px;
-  display: none;
+  padding: 0 20px 0 20px;
+  /*display: none;*/
 }
 
 .quiz-card__button {
   width: calc(100% - 40px);
   margin: 0 20px;
   padding: 20px;
-  border: 1px none #ddd;
-  border-radius: 5px;
-  background-color: var(--color-primary);
-  color: white;
+  border: 0.5px #ddd solid;
+  border-radius: 15px;
+  background-color: var(--color-secondary);
+  color: #333;
   font-weight: 300;
 }
 
@@ -51,16 +58,16 @@
   list-style: none;
   display: flex;
   flex-flow: wrap;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 5px 20px;
 }
 
 .quiz-card__tag-cloud--item {
   display: inline-block;
   background: #ddd;
-  border-radius: 5px;
+  border-radius: 15px;
   color: #333;
   margin: 4px;
-  padding: 7px 10px 5px 10px;
+  padding: 9px 12px 7px 12px;
   font-weight: 300;
   width: max-content;
 }

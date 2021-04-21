@@ -3,12 +3,23 @@
 }
 
 body {
-  background-color: var(--color-white);
+  background-color: var(--color-background);
   color: var(--color-black);
   font-family: sans-serif;
   font-size: 112.5%;
   line-height: 1.2;
   margin: 0;
+  display: grid;
+  grid-template-rows: 48px auto 48px;
+  height: 100vh;
+}
+
+.app-main {
+  display: grid;
+  place-items: center;
+  max-width: 600px;
+  grid-gap: 40px;
+  overflow-y: scroll;
 }
 
 h1,

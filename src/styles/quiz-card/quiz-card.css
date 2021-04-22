@@ -1,22 +1,22 @@
 .quiz-card {
   padding: 0;
-  margin: 0;
+  margin: 0 20px;
   border: 0.5px #ddd solid;
   border-radius: 30px;
   background-color: var(--color-white);
-  box-shadow: 1px 1px 7px #ddd;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.226);
   text-align: center;
   font-weight: 300;
   position: relative;
 }
 
 .quiz-card:first-child {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 /* warum funktioniert es nicht, einen Abstand zum Footer zu bekommen? */
 .quiz-card:last-child {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .quiz-card__bookmark {
@@ -39,28 +39,26 @@
   text-align: left;
   color: var(--color-primary);
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .quiz-card__text {
   text-align: left;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px;
   margin: 0;
 }
 
-.quiz-card__text--answer {
-  text-align: left;
-  padding: 0 20px 0 20px;
-  /*display: none;*/
+.quiz-card__text--hidden {
+  visibility: hidden;
 }
 
 .quiz-card__button {
   width: calc(100% - 40px);
-  margin: 0 20px;
+  margin: 20px 20px 20px 20px;
   padding: 20px;
   border: 0.5px #ddd solid;
   border-radius: 15px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary-alt);
   color: #333;
   font-weight: 300;
 }

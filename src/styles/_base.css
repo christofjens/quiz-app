@@ -10,7 +10,7 @@ body {
   line-height: 1.2;
   margin: 0;
   display: grid;
-  grid-template-rows: 48px auto 48px;
+  grid-template-rows: 55px auto 55px;
   height: 100vh;
 }
 

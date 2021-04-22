@@ -1,11 +1,12 @@
 .app-footer {
-  background: var(--color-primary);
-  color: var(--color-white);
+  background: var(--color-secondary);
+  color: var(--color-black);
   padding: 12px;
   display: flex;
+  justify-content: space-around;
 }
 
 .app-footer__items {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
 }

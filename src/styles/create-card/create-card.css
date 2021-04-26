@@ -1,6 +1,6 @@
 .create-card {
   padding: 0;
-  margin: 20px;
+  margin: 10px;
   border: 0.5px #ddd solid;
   border-radius: 30px;
   background-color: var(--color-white);

@@ -1,34 +1,38 @@
 <section class="create-card">
   <form action="" class="create-card__form">
     <div class="">
-      <label for="question">Add a question </label>
+      <label for="question" class="create-card__headline"
+        >Add a question
+      </label>
       <textarea
         class="create-card__item"
         id="question"
         name="question"
         rows="5"
-        cols="33"
       ></textarea>
     </div>
     <div class="">
-      <label for="answer">Add an answer: </label>
+      <label for="answer" class="create-card__headline">Add an answer: </label>
       <textarea
         class="create-card__item"
         id="answer"
         name="answer"
         rows="5"
-        cols="33"
       ></textarea>
     </div>
     <div class="">
-      <label for="tags">Add some tags: </label>
+      <label for="tags" class="create-card__headline"
+        >Add some tags<br /><span class="create-card__text"
+          >(divided by comma):</span
+        >
+      </label>
       <textarea
         class="create-card__item"
         id="tags"
         name="tags"
         rows="5"
-        cols="33"
       ></textarea>
     </div>
+    <button class="create-card__button">Submit Card</button>
   </form>
 </section>

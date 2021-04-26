@@ -1,12 +1,18 @@
 .app-footer {
-  background: var(--color-primary-alt);
+  background: var(--color-primary);
   color: var(--color-white);
-  padding: 15px;
+  height: 48px;
   display: flex;
   justify-content: space-around;
+  align-self: center;
   font-size: 28px;
+  padding: 5px;
+}
+
+.app-footer__item {
+  color: var(--color-white);
 }
 
 .app-footer__item--active {
-  color: var(--color-secondary);
+  color: var(--color-secondary-alt);
 }

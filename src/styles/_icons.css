@@ -10,7 +10,7 @@ i[class^='fi-rr-']:before,
 i[class*=' fi-rr-']:before,
 span[class^='fi-rr-']:before,
 span[class*='fi-rr-']:before {
-  font-family: uicons-regular-rounded !important;
+  font-family: uicons-regular-rounded, sans-serif !important;
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;

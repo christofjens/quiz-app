@@ -1,0 +1,21 @@
+.create-card {
+  padding: 0;
+  margin: 20px 20px;
+  border: 0.5px #ddd solid;
+  border-radius: 30px;
+  background-color: var(--color-white);
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.226);
+  text-align: left;
+  font-weight: 300;
+  position: relative;
+}
+
+.create-card__form {
+  margin: 20px;
+}
+.create-card__item {
+  margin: 10px 0 20px 0;
+  border: 0.5px solid #ddd;
+  border-radius: 15px;
+  background-color: var(--color-background);
+}

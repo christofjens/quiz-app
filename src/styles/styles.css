@@ -5,6 +5,7 @@
 @import './quiz-card/quiz-card.css';
 @import './create-card/create-card.css';
 @import './footer-menu/footer-menu.css';
+@import './profile-card/profile-card.css';
 
 @import './_icons.css';
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap');

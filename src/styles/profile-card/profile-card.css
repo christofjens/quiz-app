@@ -7,13 +7,57 @@
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.226);
   text-align: left;
   position: relative;
+  display: grid;
+}
+
+.profile-card__top {
+  display: flex;
+  align-self: center;
+  margin-bottom: 20px;
 }
 
 .profile-card-picture {
-  width: 150px;
+  width: 100px;
   border: var(--color-primary) 0.5px solid;
   border-radius: 15px;
 }
 
 .profile-card-name {
+  padding: 20px;
+}
+
+.profile-card__text {
+  text-align: left;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.profile-card__tag-cloud {
+  list-style: none;
+  display: flex;
+  flex-flow: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-card__tag-cloud--item {
+  display: inline-block;
+  background: #ddd;
+  border-radius: 15px;
+  color: #333;
+  margin: 10px 10px 0 0;
+  padding: 9px 12px 7px 12px;
+  font-weight: 300;
+  width: max-content;
+}
+
+.profile-card__logout-button {
+  width: 100%;
+  padding: 20px;
+  margin: 30px 0 0 0;
+  border: 0.5px #ddd solid;
+  border-radius: 15px;
+  background-color: var(--color-secondary-alt);
+  color: #333;
+  font-weight: 700;
 }

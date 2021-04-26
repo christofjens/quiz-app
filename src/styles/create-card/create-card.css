@@ -1,5 +1,5 @@
 .create-card {
-  padding: 0;
+  padding: 10px;
   margin: 10px;
   border: 0.5px #ddd solid;
   border-radius: 30px;
@@ -11,7 +11,7 @@
 
 .create-card__headline {
   font-family: 'Lobster', cursive;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1rem;
   margin: 1rem 1.25rem 0.5rem 0;
   color: var(--color-primary);

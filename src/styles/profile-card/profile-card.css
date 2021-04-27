@@ -1,6 +1,6 @@
 .profile-card {
   padding: 20px;
-  margin: 10px;
+  margin: 30px 10px;
   border: 0.5px #ddd solid;
   border-radius: 30px;
   background-color: var(--color-white);
@@ -12,18 +12,19 @@
 
 .profile-card__top {
   display: flex;
-  align-self: center;
   margin-bottom: 20px;
 }
 
 .profile-card-picture {
-  width: 100px;
+  width: 120px;
   border: var(--color-primary) 0.5px solid;
-  border-radius: 15px;
+  border-radius: 50%;
 }
 
 .profile-card-name {
   padding: 20px;
+  color: var(--color-primary);
+  align-self: center;
 }
 
 .profile-card__text {

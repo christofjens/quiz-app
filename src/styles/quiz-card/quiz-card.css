@@ -1,6 +1,6 @@
 .quiz-card {
   padding: 20px;
-  margin: 10px;
+  margin: 30px 10px;
   border: 0.5px #ddd solid;
   border-radius: 30px;
   background-color: var(--color-white);
@@ -9,11 +9,6 @@
   position: relative;
 }
 
-.quiz-card:first-child {
-  margin-top: 30px;
-}
-
-/* warum funktioniert es nicht, einen Abstand zum Footer zu bekommen? */
 .quiz-card:last-child {
   margin-bottom: 30px;
 }
@@ -34,7 +29,6 @@
 }
 
 .quiz-card__headline {
-  font-weight: 400;
   font-size: 1.5rem;
   margin: 1rem 1.25rem 0.5rem 1.25rem;
   color: var(--color-primary);
@@ -58,7 +52,6 @@
   border-radius: 15px;
   background-color: var(--color-secondary-alt);
   color: #333;
-  font-weight: 300;
 }
 
 .quiz-card__tag-cloud {
@@ -76,6 +69,5 @@
   color: #333;
   margin: 10px 10px 0 0;
   padding: 9px 12px 7px 12px;
-  font-weight: 300;
   width: max-content;
 }

@@ -1,6 +1,6 @@
 .create-card {
   padding: 10px;
-  margin: 10px;
+  margin: 30px 10px;
   border: 0.5px #ddd solid;
   border-radius: 30px;
   background-color: var(--color-white);
@@ -13,12 +13,12 @@
   font-family: 'Lobster', cursive;
   font-size: 1.3rem;
   line-height: 1rem;
-  margin: 1rem 1.25rem 0.5rem 0;
+  margin: 1rem 1.25rem 0.5rem 20px;
   color: var(--color-primary);
 }
 
 .create-card__form {
-  margin: 20px;
+  margin: 30px 10px 10px 10px;
 }
 .create-card__item {
   margin: 10px 0 40px 0;

@@ -11,8 +11,10 @@
 
 .app-footer__item {
   color: var(--color-white);
+  background-color: transparent;
+  border: none;
 }
 
-.app-footer__item--active {
+.active {
   color: var(--color-secondary-alt);
 }

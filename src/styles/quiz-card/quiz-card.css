@@ -40,8 +40,15 @@
   margin: 0 0 10px 0;
 }
 
-.quiz-card__text--hidden {
-  visibility: hidden;
+.quiz-card__answer {
+  text-align: left;
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: none;
+}
+
+.quiz-card__answer--show {
+  display: block !important;
 }
 
 .quiz-card__button {

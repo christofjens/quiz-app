@@ -6,12 +6,13 @@
     <title>Quiz App</title>
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script defer type="module" src="./index.js"></script>
   </head>
   <body>
     <header class="app-header">
       <h1 class="app-header__heading">Quiz App</h1>
     </header>
-    <main>
+    <main class="page-quiz">
       <section class="quiz-card">
         <div
           role="button"
@@ -24,7 +25,7 @@
           ab, numquam voluptates accusamus, dignissimos laudantium corporis?
         </p>
         <button class="quiz-card__button">Show Answer</button>
-        <p class="quiz-card__text quiz-card__text--answer">
+        <p class="quiz-card__answer">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsa
           ab, numquam voluptates accusamus, dignissimos laudantium corporis?
         </p>
@@ -49,7 +50,84 @@
           ab, numquam voluptates accusamus, dignissimos laudantium corporis?
         </p>
         <button class="quiz-card__button">Show Answer</button>
-        <p class="quiz-card__text quiz-card__text--answer">
+        <p class="quiz-card__answer quiz-card__answer--hidden">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsa
+          ab, numquam voluptates accusamus, dignissimos laudantium corporis?
+        </p>
+        <ul class="quiz-card__tag-cloud">
+          <li class="quiz-card__tag-cloud--item">Tag</li>
+          <li class="quiz-card__tag-cloud--item">Content</li>
+          <li class="quiz-card__tag-cloud--item">CSS</li>
+          <li class="quiz-card__tag-cloud--item">JavaScript</li>
+          <li class="quiz-card__tag-cloud--item">React</li>
+          <li class="quiz-card__tag-cloud--item">HTML</li>
+        </ul>
+      </section>
+      <section class="quiz-card">
+        <div
+          role="button"
+          class="quiz-card__bookmark"
+          aria-label="Bookmark this Question"
+        ></div>
+        <h2 class="quiz-card__headline">Question:</h2>
+        <p class="quiz-card__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsa
+          ab, numquam voluptates accusamus, dignissimos laudantium corporis?
+        </p>
+        <button class="quiz-card__button">Show Answer</button>
+        <p class="quiz-card__answer quiz-card__answer--hidden">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsa
+          ab, numquam voluptates accusamus, dignissimos laudantium corporis?
+        </p>
+        <ul class="quiz-card__tag-cloud">
+          <li class="quiz-card__tag-cloud--item">Tag</li>
+          <li class="quiz-card__tag-cloud--item">Content</li>
+          <li class="quiz-card__tag-cloud--item">CSS</li>
+          <li class="quiz-card__tag-cloud--item">JavaScript</li>
+          <li class="quiz-card__tag-cloud--item">React</li>
+          <li class="quiz-card__tag-cloud--item">HTML</li>
+        </ul>
+      </section>
+      <section class="quiz-card">
+        <div
+          role="button"
+          class="quiz-card__bookmark"
+          aria-label="Bookmark this Question"
+        ></div>
+        <h2 class="quiz-card__headline">Question:</h2>
+        <p class="quiz-card__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsa
+          ab, numquam voluptates accusamus, dignissimos laudantium corporis?
+        </p>
+        <button class="quiz-card__button">Show Answer</button>
+        <p class="quiz-card__answer quiz-card__answer--hidden">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsa
+          ab, numquam voluptates accusamus, dignissimos laudantium corporis?
+        </p>
+        <ul class="quiz-card__tag-cloud">
+          <li class="quiz-card__tag-cloud--item">Tag</li>
+          <li class="quiz-card__tag-cloud--item">Content</li>
+          <li class="quiz-card__tag-cloud--item">CSS</li>
+          <li class="quiz-card__tag-cloud--item">JavaScript</li>
+          <li class="quiz-card__tag-cloud--item">React</li>
+          <li class="quiz-card__tag-cloud--item">HTML</li>
+        </ul>
+      </section>
+    </main>
+    <main class="page-bookmarks hidden">
+      <section class="quiz-card">
+        <div
+          role="button"
+          class="quiz-card__bookmark quiz-card__bookmark--active"
+          aria-label="Bookmark this Question"
+        ></div>
+        <h2 class="quiz-card__headline">Question:</h2>
+        <p class="quiz-card__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsa
+          ab, numquam voluptates accusamus, dignissimos laudantium corporis?
+        </p>
+        <button class="quiz-card__button">Show Answer</button>
+        <p class="quiz-card__answer">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsa
           ab, numquam voluptates accusamus, dignissimos laudantium corporis?
         </p>
@@ -74,32 +152,7 @@
           ab, numquam voluptates accusamus, dignissimos laudantium corporis?
         </p>
         <button class="quiz-card__button">Show Answer</button>
-        <p class="quiz-card__text quiz-card__text--answer">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsa
-          ab, numquam voluptates accusamus, dignissimos laudantium corporis?
-        </p>
-        <ul class="quiz-card__tag-cloud">
-          <li class="quiz-card__tag-cloud--item">Tag</li>
-          <li class="quiz-card__tag-cloud--item">Content</li>
-          <li class="quiz-card__tag-cloud--item">CSS</li>
-          <li class="quiz-card__tag-cloud--item">JavaScript</li>
-          <li class="quiz-card__tag-cloud--item">React</li>
-          <li class="quiz-card__tag-cloud--item">HTML</li>
-        </ul>
-      </section>
-      <section class="quiz-card">
-        <div
-          role="button"
-          class="quiz-card__bookmark"
-          aria-label="Bookmark this Question"
-        ></div>
-        <h2 class="quiz-card__headline">Question:</h2>
-        <p class="quiz-card__text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsa
-          ab, numquam voluptates accusamus, dignissimos laudantium corporis?
-        </p>
-        <button class="quiz-card__button">Show Answer</button>
-        <p class="quiz-card__text quiz-card__text--answer">
+        <p class="quiz-card__answer">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ipsa
           ab, numquam voluptates accusamus, dignissimos laudantium corporis?
         </p>
@@ -113,23 +166,105 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <footer class="app-footer">
-        <a href="./index.html" aria-label="Home"
-          ><i
-            class="app-footer__item app-footer__item--active fi fi-rr-home"
-          ></i
-        ></a>
-        <a href="./bookmarks.html" aria-label="Bookmarks"
-          ><i class="app-footer__item fi fi-rr-bookmark"></i
-        ></a>
-        <a href="./create.html" aria-label="Create"
-          ><i class="app-footer__item fi fi-rr-form"></i
-        ></a>
-        <a href="./profile.html" aria-label="Profile"
-          ><i class="app-footer__item fi fi-rr-user"></i
-        ></a>
-      </footer>
+    <main class="page-create hidden">
+      <section class="create-card">
+        <form action="" class="create-card__form">
+          <div class="">
+            <label for="question" class="create-card__headline"
+              >Add a question
+            </label>
+            <textarea
+              class="create-card__item"
+              id="question"
+              name="question"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="">
+            <label for="answer" class="create-card__headline"
+              >Add an answer:
+            </label>
+            <textarea
+              class="create-card__item"
+              id="answer"
+              name="answer"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="">
+            <label for="tags" class="create-card__headline"
+              >Add some tags<br /><span class="create-card__text"
+                >(divided by comma):</span
+              >
+            </label>
+            <textarea
+              class="create-card__item"
+              id="tags"
+              name="tags"
+              rows="5"
+            ></textarea>
+          </div>
+          <button class="create-card__button">Submit Card</button>
+        </form>
+      </section>
+    </main>
+    <main class="page-profile hidden">
+      <section class="profile-card">
+        <div class="profile-card__top">
+          <img
+            src="../../assets/profile.jpeg"
+            alt=""
+            class="profile-card-picture"
+          />
+          <h2 class="profile-card-name">Christof Jens</h2>
+        </div>
+        <h3>About yourself</h3>
+        <p class="profile-card__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsa
+          magnam itaque repudiandae ad eveniet dolorum veritatis sapiente
+          aliquam dignissimos sunt iste, quos commodi, odit architecto? Autem
+          veritatis similique praesentium!
+        </p>
+        <h3>Skills</h3>
+        <ul class="profile-card__tag-cloud">
+          <li class="profile-card__tag-cloud profile-card__tag-cloud--item">
+            Tag
+          </li>
+          <li class="profile-card__tag-cloud profile-card__tag-cloud--item">
+            Content
+          </li>
+          <li class="profile-card__tag-cloud profile-card__tag-cloud--item">
+            CSS
+          </li>
+          <li class="profile-card__tag-cloud profile-card__tag-cloud--item">
+            JavaScript
+          </li>
+          <li class="profile-card__tag-cloud profile-card__tag-cloud--item">
+            React
+          </li>
+          <li class="profile-card__tag-cloud profile-card__tag-cloud--item">
+            HTML
+          </li>
+        </ul>
+        <button class="profile-card__logout-button">
+          Log out <i class="fi-rr-sign-out"></i>
+        </button>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <button class="app-footer__item button-quiz active">
+        <i class="fi fi-rr-home"></i>
+      </button>
+      <button class="app-footer__item button-bookmarks">
+        <i class="fi fi-rr-bookmark"></i>
+      </button>
+      <button class="app-footer__item button-create">
+        <i class="fi fi-rr-form"></i>
+      </button>
+      <button class="app-footer__item button-profile">
+        <i class="fi fi-rr-user"></i>
+      </button>
     </footer>
   </body>
 </html>

@@ -9,6 +9,17 @@
   position: relative;
 }
 
+.quiz-card--darkmode {
+  padding: 20px;
+  margin: 30px 10px;
+  border: 0.5px #ddd solid;
+  border-radius: 30px;
+  background-color: #333 !important;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.226);
+  text-align: left;
+  position: relative;
+}
+
 .quiz-card:last-child {
   margin-bottom: 30px;
 }

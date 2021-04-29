@@ -13,51 +13,49 @@ const flagBookmark = document.querySelector('.quiz-card__bookmark')
 const answerButton = document.querySelector('.quiz-card__button')
 const answerText = document.querySelector('.quiz-card__answer')
 
-buttonQuiz.addEventListener('click', () => {
-  pageQuiz.classList.remove('hidden')
+const hideAllPages = () => {
+  pageQuiz.classList.add('hidden')
   pageBookmarks.classList.add('hidden')
   pageCreate.classList.add('hidden')
   pageProfile.classList.add('hidden')
+}
 
-  buttonQuiz.classList.add('active')
+const deactivateAllButtons = () => {
+  buttonQuiz.classList.remove('active')
   buttonBookmarks.classList.remove('active')
   buttonCreate.classList.remove('active')
   buttonProfile.classList.remove('active')
+}
+
+buttonQuiz.addEventListener('click', () => {
+  hideAllPages()
+  pageQuiz.classList.remove('hidden')
+
+  deactivateAllButtons()
+  buttonQuiz.classList.add('active')
 })
 
 buttonBookmarks.addEventListener('click', () => {
-  pageQuiz.classList.add('hidden')
+  hideAllPages()
   pageBookmarks.classList.remove('hidden')
-  pageCreate.classList.add('hidden')
-  pageProfile.classList.add('hidden')
 
-  buttonQuiz.classList.remove('active')
+  deactivateAllButtons()
   buttonBookmarks.classList.add('active')
-  buttonCreate.classList.remove('active')
-  buttonProfile.classList.remove('active')
 })
 
 buttonCreate.addEventListener('click', () => {
-  pageQuiz.classList.add('hidden')
-  pageBookmarks.classList.add('hidden')
+  hideAllPages()
   pageCreate.classList.remove('hidden')
-  pageProfile.classList.add('hidden')
 
-  buttonQuiz.classList.remove('active')
-  buttonBookmarks.classList.remove('active')
+  deactivateAllButtons()
   buttonCreate.classList.add('active')
-  buttonProfile.classList.remove('active')
 })
 
 buttonProfile.addEventListener('click', () => {
-  pageQuiz.classList.add('hidden')
-  pageBookmarks.classList.add('hidden')
-  pageCreate.classList.add('hidden')
+  hideAllPages()
   pageProfile.classList.remove('hidden')
 
-  buttonQuiz.classList.remove('active')
-  buttonBookmarks.classList.remove('active')
-  buttonCreate.classList.remove('active')
+  deactivateAllButtons()
   buttonProfile.classList.add('active')
 })
 
@@ -67,4 +65,14 @@ flagBookmark.addEventListener('click', () => {
 
 answerButton.addEventListener('click', () => {
   answerText.classList.toggle('quiz-card__answer--show')
+})
+
+const buttonDarkmode = document.querySelector('.darkmode-button')
+const body = document.querySelector('body')
+const quizCard = document.querySelector('.quiz-card')
+
+buttonDarkmode.addEventListener('click', () => {
+  body.classList.toggle('darkmode')
+  quizCard.classListremove('quiz-card')
+  quizCard.classList.add('quiz-card--darkmode')
 })

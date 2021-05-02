@@ -18,7 +18,7 @@
 .profile-card-picture {
   width: 120px;
   border: var(--color-primary) 0.5px solid;
-  border-radius: 50%;
+  border-radius: 15px;
 }
 
 .profile-card-name {
